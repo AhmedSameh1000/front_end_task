@@ -1,0 +1,8 @@
+#imgs {
+	margin-top: 100px;
+	text-align: center;
+}
+#imgs > img {
+	margin-left: 5px;
+	padding: 10px;
+}

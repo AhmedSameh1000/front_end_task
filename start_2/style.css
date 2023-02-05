@@ -1,0 +1,48 @@
+div,
+p,
+span {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+div h1 {
+	text-align: center;
+}
+.none-bullets-list {
+	list-style: none;
+}
+.none-bullets-list li a {
+	text-decoration: none;
+	background-color: pink;
+	color: red;
+}
+.none-bullets-list li a:hover {
+	background-color: red;
+	color: pink;
+}
+h2 + p {
+	font-weight: bold;
+	font-size: 12px;
+}
+#loginform {
+	border: dashed 2px rgb(20, 70, 60);
+}
+input[type="text"] {
+	background-color: yellow;
+}
+input[type="text"]:focus {
+	background-color: white;
+}
+.tabled-bordered {
+	display: inline-block;
+	padding: 5px;
+	border: 3px solid black;
+}
+span > p::after {
+	color: yellow;
+	content: "read this";
+}
+#content,
+#aboutus {
+	color: black !important;
+}

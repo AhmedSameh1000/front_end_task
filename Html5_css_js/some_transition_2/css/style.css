@@ -1,0 +1,96 @@
+* {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+@font-face {
+	font-family: "ahmed";
+	src: url("../Cairo-VariableFont_slnt\,wght.ttf");
+}
+.server {
+	font-family: "ahmed";
+}
+.web {
+	font-family: "Noto Sans Cherokee", sans-serif;
+	font-family: "Roboto", sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
+}
+.par {
+	display: flex;
+	background-color: #333;
+	justify-content: space-between;
+	width: 600px;
+	margin: auto;
+}
+
+.par li {
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	width: calc(100% / 5);
+	transition: 0.3s;
+	text-align: center;
+	cursor: pointer;
+	list-style: none;
+}
+.par li:hover {
+	background-color: green;
+}
+.heading {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.imgs {
+	margin-bottom: 100px;
+}
+
+.imgs img {
+	margin-top: 100px;
+	width: 150px;
+	height: 150px;
+	margin-left: 30px;
+	transition: 0.3s;
+}
+.imgs img:hover {
+	transform: scale(1.5);
+}
+/* //-------------------------- */
+.content {
+	margin-top: 100px;
+	align-items: center;
+	width: 700px;
+	margin: auto;
+	display: flex;
+	justify-content: start;
+	overflow: hidden;
+	background-color: blue;
+	transition: 0.3s;
+	border-radius: 77px;
+	color: white;
+}
+#my_img {
+	width: 150px;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+}
+#name {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	transition: 0.3s;
+	height: 100px;
+}
+#close {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+	cursor: pointer;
+	font-size: 40px;
+}

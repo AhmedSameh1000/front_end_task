@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,700&family=Work+Sans:ital,wght@0,400;0,500;0,700;0,900;1,200;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/styl.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<img
+					src="img/102584185_1147110018975446_3148832179023249408_n.jpg"
+					alt=""
+				/>
+				<div class="info">
+					<h1 id="my_name">Ahmed sameh ALi</h1>
+					<h3 id="job_">iam UI UX designer</h3>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicin elit. Iste Lorem
+						ipisicin elit. Iste asperna.ipisicin elit. Iste asperna. pisicin
+					</p>
+				</div>
+			</header>
+		</div>
+
+		<div class="container">
+			<section class="sec_1">
+				<div class="content">
+					<h1 id="contact">contact</h1>
+					<div>
+						<i class="fa-solid fa-house-user"></i>
+						<p id="location_">alexandrai khorshid</p>
+						<audio id="sound">
+							<source
+								src="sound/mixkit-small-group-cheer-and-applause-518.wav"
+								type="audio/ogg"
+							/>
+
+							Your browser does not support the audio element.
+						</audio>
+					</div>
+					<div>
+						<i class="fa-solid fa-mobile-screen-button"></i>
+						<p id="phone_">01092532838</p>
+					</div>
+					<div>
+						<i class="fa-solid fa-envelope"></i>
+						<p id="email_">ahmed14@protonmail.ch</p>
+					</div>
+					<div>
+						<i class="fa-brands fa-facebook"></i>
+						<time> <p>24/7/2000</p></time>
+					</div>
+				</div>
+				<div class="achivment">
+					<h1>Achivment</h1>
+					<div>
+						<h3>2020 Learn project</h3>
+						<p>Lorem ipsum dolor sit amet consectetur</p>
+					</div>
+					<div>
+						<h3>2021 fire first project</h3>
+						<p>Lorem ipsum dolor sit amet consectetur</p>
+					</div>
+					<div>
+						<h3>2020 pay first project</h3>
+						<p>Lorem ipsum dolor sit amet consectetur</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container">
+			<section class="sec_2">
+				<div class="lang_skills">
+					<h1>Languages</h1>
+					<div>
+						<p>English</p>
+						<div class="prog_one"></div>
+					</div>
+					<div>
+						<p>German</p>
+						<div class="prog_two"></div>
+					</div>
+					<div>
+						<p>Spanish</p>
+						<div class="prog_three"></div>
+					</div>
+					<h1>Skills</h1>
+					<aside class="skills">
+						<div>c++</div>
+						<div>html</div>
+						<div>css</div>
+						<div>js</div>
+					</aside>
+				</div>
+				<div class="education achivment">
+					<h1>Education</h1>
+					<div>
+						<h3>2020 Learn project</h3>
+						<p>
+							Lorem ipsum dolor sit amet
+						</p>
+					</div>
+					<div>
+						<h3>2021 fire first project</h3>
+						<p>
+							Lorem ipsum dolor sit amet
+						</p>
+					</div>
+					<div>
+						<h3>2020 pay first project</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container">
+			<section class="sec_3">
+				<div class="online_info">
+					<h1>Online information</h1>
+					<div>
+						<i class="fa-brands fa-facebook"></i>
+						<p>FaceBook</p>
+						<i class="fa-brands fa-google-plus"></i>
+						<p>Google</p>
+					</div>
+				</div>
+				<div class="work achivment">
+					<h1>Work Experience</h1>
+					<div>
+						<h3>2022 graduation project</h3>
+						<p>Lorem ipsum dolor sit amet consectetur</p>
+					</div>
+					<div>
+						<h3>2023 ITI intern</h3>
+						<p>Lorem ipsum dolor sit amet consectetur</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container">
+			<footer class="foter">
+				<div></div>
+				<div></div>
+				<div></div>
+			</footer>
+		</div>
+	</body>
+	<script>
+		let user_name = document.getElementById("my_name");
+		let email = document.getElementById("email_");
+		let locatio = document.getElementById("location_");
+		let job = document.getElementById("job_");
+		let phone = document.getElementById("phone_");
+		//-----------------------------------------------------------------------
+		user_name.textContent = location.search
+			.split("&")[0]
+			.split("=")[1]
+			.replaceAll("+", " ");
+
+		email.textContent = location.search
+			.split("&")[1]
+			.split("=")[1]
+			.replaceAll("%40", "@");
+
+		job.textContent = location.search
+			.split("&")[2]
+			.split("=")[1]
+			.replaceAll("+", " ");
+
+		locatio.textContent = location.search
+			.split("&")[3]
+			.split("=")[1]
+			.replaceAll("+", " ");
+		phone.textContent = location.search.split("&")[4].split("=")[1];
+		// -------------------------------
+		let contact = document.getElementById("contact");
+		contact.onclick = function () {
+			let sound = document.getElementById("sound");
+			sound.play();
+		};
+		//--------------------------------
+	</script>
+	<script src="js/app.js"></script>
+</html>

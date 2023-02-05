@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css.css" />
+	</head>
+	<body>
+		<h1 id="head">this is slider</h1>
+		<hr />
+		<div class="content">
+			<div class="container">
+				<img src="img/1.jpg" alt="" />
+				<img src="img/2.jpg" alt="" />
+				<img src="img/3.jpg" alt="" />
+				<img src="img/4.jpg" alt="" />
+			</div>
+			<div class="btns">
+				<div id="next">next</div>
+				<div id="stop">stop</div>
+				<div id="play">play</div>
+				<div id="prev">prev</div>
+			</div>
+		</div>
+		<hr />
+		<div class="inp">
+			<input type="text" onkeydown="preven(event)" />
+		</div>
+		<hr />
+		<div class="regist">
+			<form action="user.html" id="my_form">
+				<div id="after_name"></div>
+				<input
+					type="text"
+					name="user_name"
+					id="names"
+					placeholder="Enter Full Name"
+				/>
+
+				<input type="email" required placeholder="Email" />
+				<select name="city" id="city">
+					<option disabled selected> select city</option>
+					<option value="alexandria">alexandria</option>
+					<option value="cairo">Saab</option>
+					<option value="qena">Mercedes</option>
+					<option value="sohag">Audi</option>
+				</select>
+				<input type="password" id="one" placeholder="your password" />
+				<div id="after_pass"></div>
+				<input type="password" id="two" placeholder="repeate your password" />
+				<div class="ch">
+					<label style="font-size: 20px;" for="check"
+						>i accept the terms and condition</label
+					>
+					<input type="checkbox" id="check" />
+				</div>
+				<input type="submit" />
+			</form>
+		</div>
+		<hr />
+		<h1 style="text-align: center;">this is my task</h1>
+		<hr />
+		<div class="tasks">
+			<form class="formssss" action="">
+				<label for="">name</label>
+				<input type="text" name="name" id="cont_name" />
+				<label for="">age</label>
+				<input type="text" name="age" id="cont_age" />
+				<label for="">Email</label>
+				<input type="email" name="email" id="cont_email" />
+				<div class="btn">
+					<input type="submit" />
+					<input type="reset" />
+				</div>
+			</form>
+			<div id="my_content">
+				<div class="card">
+					<div class="name_content">Name</div>
+					<div class="age_content">Age</div>
+					<div class="email_content">Email</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="app.js"></script>
+</html>

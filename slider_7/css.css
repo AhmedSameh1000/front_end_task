@@ -1,0 +1,121 @@
+input {
+	outline: none;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#head {
+	text-align: center;
+	background-color: gray;
+	padding: 10px;
+	color: white;
+	border-radius: 10px;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+}
+.container img {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+}
+.btns {
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	gap: 35px;
+	margin-top: 5px;
+}
+.btns > div {
+	background-color: #aaaa;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.inp {
+	text-align: center;
+	padding: 10px;
+	background-color: gray;
+}
+.inp input {
+	width: 50%;
+}
+
+.ch #check {
+	width: 10px;
+	margin-left: 10px;
+}
+.regist form {
+	display: flex;
+	flex-direction: column;
+}
+.regist select {
+	width: 100px;
+	margin-bottom: 5px;
+}
+.regist form input {
+	margin-bottom: 30px;
+	width: 50%;
+}
+.regist {
+	padding-top: 30px;
+}
+#after_name {
+	display: none;
+	margin-left: 20px;
+}
+#after_pass {
+	display: none;
+}
+
+.tasks {
+	height: 500px;
+	width: 50%;
+	margin: auto;
+}
+.tasks form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: space-around;
+	margin: auto;
+}
+.tasks form input,
+label {
+	margin-bottom: 10px;
+}
+.btn {
+	display: flex;
+	justify-content: space-evenly;
+}
+#my_content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+.card {
+	display: flex;
+	justify-content: space-around;
+	background-color: gray;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.card div {
+	margin-right: 3px;
+	background-color: #333;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
